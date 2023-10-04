@@ -58,7 +58,9 @@ app.get('/api/properties', async (req, res) => {
 
 
 
-
+app.get('/', (req, res) => {
+  res.send('Welcome to My API');
+});
 
 
 const PORT = process.env.PORT || 5000;
